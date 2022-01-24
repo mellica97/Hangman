@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hangman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <!-- bootstrap 4 CDN --> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="container">
+      <h1 class="text-center m-4">Hangman</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="float-left">
+            wrong guesses <span id="mistakes">0</span> of <span id="maxwrong"></span>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <span id="counter" class="float-right">
+            10:00
+          </span> 
+          <span class="float-right mr-2">
+            <button class="btn btn-success btn-sm" onclick="countDown()">start</button>
+          </span>
+        </div>
+      </div>
+      
+      
+      
+     
+
+      <div class=" container text-center" >
+          <p style="margin-bottom: 0;">Guess the sport</p>
+          <p id="wordSpotlight">The word to guess goes here</p>
+          <div id="keyboard" style="display: none;"></div>
+          <button class="btn btn-info" onclick="reset()">Reset</button>
+          <p class="m-2">Wrong Letter :</p>
+          <inpute id="wrongGuesses" class="form-control"></inpute>
+          <img src="./images/0.gif" id="hangmanpic" style="width: 150px;height: 150px;" alt="">
+         
+      </div>
+  </div>
+  <script src="./js/Hangman.js"></script>
+</body>
+</html>
